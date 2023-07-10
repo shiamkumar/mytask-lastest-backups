@@ -1,0 +1,3 @@
+select e.employee_name, p.employee_position 
+from Employee e inner join EmployeePosition p
+on e.employee_id = p.position_id and p.employee_position in ('developer');
